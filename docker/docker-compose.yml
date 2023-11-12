@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+  postgres:
+    image: postgres
+    container_name: "PostgeSQL"
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: wf4java
+      POSTGRES_DB: WF-SpringScreenSaveService
+    volumes:
+      - ./data:/var/lib/postgresql/data

@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: wf4java
+
+      changes:
+        - sqlFile:
+            dbms: postgresql
+            encoding: utf8
+            endDelimiter: ;
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true
+            path: 10-create-screen-table.sql
+
+      rollback:
+        - sqlFile:
+            dbms: postgresql
+            encoding: utf8
+            endDelimiter: ;
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true
+            path: 10-drop-screen-table.sql

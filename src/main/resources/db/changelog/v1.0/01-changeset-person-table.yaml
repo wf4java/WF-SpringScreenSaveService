@@ -1,0 +1,26 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: wf4java
+
+      changes:
+        - sqlFile:
+            dbms: postgresql
+            encoding: utf8
+            endDelimiter: ;
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true
+            path: 01-create-person-table.sql
+
+      rollback:
+        - sqlFile:
+            dbms: postgresql
+            encoding: utf8
+            endDelimiter: ;
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true
+            path: 01-drop-person-table.sql
+
+

@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - include:
+      file: 01-changeset-person-table.yaml
+      relativeToChangelogFile: true
+
+  - include:
+      file: 10-changeset-screen-table.yaml
+      relativeToChangelogFile: true
+
+  - include:
+      file: 11-changeset-verification-code-table.yaml
+      relativeToChangelogFile: true

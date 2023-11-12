@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - changeSet:
+      id: 3
+      author: wf4java
+
+      changes:
+        - sqlFile:
+            dbms: postgresql
+            encoding: utf8
+            endDelimiter: ;
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true
+            path: 11-create-verification-code-table.sql
+
+      rollback:
+        - sqlFile:
+            dbms: postgresql
+            encoding: utf8
+            endDelimiter: ;
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true
+            path: 11-drop-verification-code-table.sql
