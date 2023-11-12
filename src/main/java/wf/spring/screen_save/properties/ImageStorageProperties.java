@@ -15,7 +15,7 @@ public class ImageStorageProperties {
 
     private String path = "./storage";
 
-    private Collection<String> extensions = Arrays.asList(".jpg", ".jpeg", ".png");
+    private Collection<String> extensions = Arrays.asList("jpg", "jpeg", "png");
 
 
 }
