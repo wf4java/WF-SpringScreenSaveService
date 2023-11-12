@@ -7,3 +7,5 @@ Registration is carried out using email, so you need to configure the mail serve
 Most of the important settings are in application.properties
 
 Database migration is used using LiquidBase
+
+The images themselves are stored locally on the server
