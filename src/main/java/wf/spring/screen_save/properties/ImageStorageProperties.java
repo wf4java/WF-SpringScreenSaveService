@@ -17,5 +17,4 @@ public class ImageStorageProperties {
 
     private Collection<String> extensions = Arrays.asList("jpg", "jpeg", "png");
 
-
 }
