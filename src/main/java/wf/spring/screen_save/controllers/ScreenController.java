@@ -18,7 +18,7 @@ import wf.spring.screen_save.dto.screen.ScreenGetRequestDTO;
 import wf.spring.screen_save.dto.screen.ScreenResponseDTO;
 import wf.spring.screen_save.dto.screen.ScreenShortIdResponseDTO;
 import wf.spring.screen_save.mappers.ScreenMapper;
-import wf.spring.screen_save.models.ServiceException;
+import wf.spring.screen_save.models.exceptions.ServiceException;
 import wf.spring.screen_save.models.entities.Person;
 import wf.spring.screen_save.models.entities.Screen;
 import wf.spring.screen_save.models.exceptions.AccessException;

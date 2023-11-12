@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
-import wf.spring.screen_save.models.ServiceException;
+import wf.spring.screen_save.models.exceptions.ServiceException;
 import wf.spring.screen_save.models.exceptions.screen.ScreenExtensionException;
 import wf.spring.screen_save.properties.ImageStorageProperties;
 import wf.spring.screen_save.utils.FileUtils;

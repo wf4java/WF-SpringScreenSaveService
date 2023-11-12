@@ -1,7 +1,6 @@
-package wf.spring.screen_save.models;
+package wf.spring.screen_save.models.exceptions;
 
 import org.springframework.http.HttpStatus;
-import wf.spring.screen_save.models.exceptions.AbstractHttpException;
 
 public class ServiceException extends AbstractHttpException {
 
