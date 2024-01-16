@@ -66,7 +66,7 @@ public class ScreenController {
     }
 
     @GetMapping("/get_all")
-    public List<ScreenResponseDTO> getAllScreens(@RequestBody @Valid ScreenGetAllRequestDTO screenGetAllRequestDTO, BindingResult bindingResult, @AuthenticationPrincipal Person person) {
+    public List<ScreenResponseDTO> getAllScreens(@Valid ScreenGetAllRequestDTO screenGetAllRequestDTO, BindingResult bindingResult, @AuthenticationPrincipal Person person) {
         if(bindingResult.hasErrors())
             throw new BadRequestException(bindingResult);
 
